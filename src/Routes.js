@@ -7,7 +7,7 @@ function RoutesPages() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<InitialScreen />} />
+        <Route path="/my-web" element={<InitialScreen />} />
       </Routes>
     </BrowserRouter>
   );

@@ -7,8 +7,8 @@ function InitialScreen() {
     <>
       <NavbarComp />
       <div className={styles.App}>
-        <h1 className={styles.title}>Mi web</h1>
-        <h2 className={styles.title2}>Esta es mi web</h2>
+        <h1 className={styles.title}>Software developer</h1>
+        <h2 className={styles.title2}>This my website</h2>
       </div>
     </>
   );
