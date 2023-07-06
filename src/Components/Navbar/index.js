@@ -2,12 +2,13 @@ import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import styles from "./styles.module.css";
+import profileImage from "../../assets/images/ProfileImage.jpg";
+import "./styles.css";
 
 function NavbarComp() {
   const [navBg, setNavBg] = useState(false);
   const changeNavbarBg = () => {
-    if (window.scrollY > 35) {
+    if (window.scrollY > 55) {
       setNavBg(true);
     } else {
       setNavBg(false);
@@ -19,13 +20,10 @@ function NavbarComp() {
       bg={"transparent"}
       variant={navBg ? "dark" : "ligth"}
       fixed="top"
-      expand={"lg"}
     >
       <Container fluid>
         <Navbar.Brand>
-          <Link to="/my-web" className="navbar-brand">
-            Marlon Uzcátegui
-          </Link>
+          <img src={profileImage} className="imgBrand" alt="BrandImage" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -34,9 +32,9 @@ function NavbarComp() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Link className="nav-link">About me</Link>
-            <Link className="nav-link">Projects</Link>
-            <Link className="nav-link">Contact</Link>
+            <Link className="nav-link fw-bold">About me</Link>
+            <Link className="nav-link fw-bold">Projects</Link>
+            <Link className="nav-link fw-bold">Contact</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

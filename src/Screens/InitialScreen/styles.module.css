@@ -15,14 +15,108 @@
   align-items: center;
 }
 
-.title {
-  color: black;
-  text-align: center;
-  margin: 5px;
+.section {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  background-color: white;
+  border-radius: 20px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    217deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(47, 124, 140, 1) 35%,
+    rgba(218, 218, 218, 1) 65%
+  );
 }
 
-.title2 {
-  color: gray;
+.sectionContainers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  width: 50%;
+  height: 90%;
+  margin: 2.5%;
+}
+
+.titleTech {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
   text-align: center;
-  margin: 5px;
+  color: white;
+}
+
+.nameTitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 12.5vh;
+  text-align: center;
+  margin-bottom: 10%;
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.4);
+  color: rgb(78, 78, 78);
+  letter-spacing: 2px;
+  width: 85%;
+}
+
+.TitleDiv {
+  color: rgba(94, 94, 94, 1);
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .App {
+    margin-top: 8%;
+  }
+  .section {
+    height: 70vh;
+  }
+  .nameTitle {
+    font-size: 8.5vh;
+  }
+  .titleTech {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .App {
+    margin-top: 12%;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .nameTitle {
+    font-size: 5.5vh;
+    text-shadow: 0.1em 0.1em 0.2em rgba(44, 44, 44, 0.5);
+    color: rgb(216, 216, 216);
+    letter-spacing: 2px;
+    width: 100%;
+  }
+  .titleTech {
+    font-size: 15px;
+    color: rgb(53, 53, 53);
+  }
+  .TitleDiv {
+    text-shadow: 0.1em 0.1em 0.2em rgba(44, 44, 44, 0.5);
+    color: rgba(216, 216, 216, 0.8);
+    letter-spacing: 2px;
+  }
+
+  .sectionContainers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 90%;
+    margin: 5%;
+  }
 }

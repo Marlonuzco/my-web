@@ -1,0 +1,14 @@
+.navbar-brand {
+  font-family: "Roboto", sans-serif;
+  margin-left: 2.5%;
+}
+
+.nav-link {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.imgBrand{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
