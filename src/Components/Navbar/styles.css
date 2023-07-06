@@ -3,28 +3,29 @@
   margin-left: 2.5%;
 }
 
-.nav-link {
+#nav-link {
   font-family: "Montserrat Alternates", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin-right: 8px;
 }
 
-.imgBrand {
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
+.navbar-Brand {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .imgBrand {
-    height: 45px;
-    width: 45px;
-    border-radius: 22.5px;
+  #nav-link {
+    font-size: 15px;
+    margin-right: 5px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .imgBrand {
-    height: 35px;
-    width: 35px;
-    border-radius: 17.5px;
+  #nav-link {
+    font-size: 12px;
+    margin-right: 5px;
   }
 }

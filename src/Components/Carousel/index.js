@@ -73,7 +73,11 @@ function CarouselComp() {
   return (
     <Carousel className={styles.Carousel} indicators={false}>
       {values.map((item) => (
-        <Carousel.Item interval={2500} className={styles.CarouselItem}>
+        <Carousel.Item
+          interval={2500}
+          className={styles.CarouselItem}
+          key={item.id}
+        >
           <div className={styles.div}>
             <img className={styles.img} src={item.img} alt={item.ImgAltTx} />
             <h3 className={styles.title}>{item.title}</h3>
