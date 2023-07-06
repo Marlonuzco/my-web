@@ -71,7 +71,7 @@ const values = [
 
 function CarouselComp() {
   return (
-    <Carousel className={styles.Carousel}>
+    <Carousel className={styles.Carousel} indicators={false}>
       {values.map((item) => (
         <Carousel.Item interval={2500} className={styles.CarouselItem}>
           <div className={styles.div}>
