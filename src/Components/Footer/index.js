@@ -2,7 +2,9 @@ import styles from './styles.module.css'
 
 function FooterComp() {
   return (
-    <div>FooterComp</div>
+    <div className={styles.FooterComp}>
+      
+    </div>
   )
 }
 

@@ -1,6 +1,8 @@
-.navbar-brand {
+.navbar-Brand {
   font-family: "Roboto", sans-serif;
-  margin-left: 2.5%;
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 30px;
 }
 
 #nav-link {
@@ -8,12 +10,6 @@
   font-weight: bold;
   font-size: 17px;
   margin-right: 8px;
-}
-
-.navbar-Brand {
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
