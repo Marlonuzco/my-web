@@ -15,7 +15,13 @@ function NavbarComp() {
   };
   window.addEventListener("scroll", changeNavbarBg);
   return (
-    <Navbar bg={navBg ? "black": "transparent"} variant={navBg ? "dark" : "ligth"} fixed="top">
+    <Navbar
+      collapseOnSelect
+      expand="sm"
+      bg={navBg ? "black" : "transparent"}
+      variant={navBg ? "dark" : "ligth"}
+      fixed="top"
+    >
       <Container fluid>
         <Navbar.Brand>
           <h2 className="navbar-Brand">{"< />"}</h2>
